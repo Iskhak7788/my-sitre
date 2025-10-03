@@ -1,0 +1,52 @@
+:root {
+    --background-light: #ffffff;
+    --background-dark: #1e1e1e;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+}
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+nav {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}

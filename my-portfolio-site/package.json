@@ -1,0 +1,22 @@
+{
+  "name": "my-portfolio-site",
+  "version": "1.0.0",
+  "description": "A modern responsive portfolio website.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process can be defined here.'"
+  },
+  "keywords": [
+    "portfolio",
+    "responsive",
+    "website",
+    "github-pages"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

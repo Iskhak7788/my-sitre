@@ -1,0 +1,5 @@
+/* Theme helpers */
+:root{--transition:200ms cubic-bezier(.2,.9,.3,1)}
+button#theme-toggle{background:transparent;border:0;font-size:1.1rem;cursor:pointer;padding:0.4rem;border-radius:8px}
+input,textarea{width:100%;padding:0.6rem;border-radius:8px;border:1px solid rgba(15,23,42,0.06);background:transparent;color:var(--fg);margin-top:0.4rem}
+label{display:block;margin-bottom:0.8rem}

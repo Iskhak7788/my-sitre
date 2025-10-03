@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/themes.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation Component -->
+        <div id="nav"></div>
+    </header>
+    
+    <main>
+        <!-- Welcome Section -->
+        <div id="welcome"></div>
+        
+        <!-- Projects Section -->
+        <div id="projects"></div>
+        
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Footer Component -->
+        <div id="footer"></div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/theme-toggle.js"></script>
+    <script src="../scripts/contact.js"></script>
+    
+    <script>
+        // Load components dynamically
+        async function loadComponent(id, path) {
+            const response = await fetch(path);
+            const html = await response.text();
+            document.getElementById(id).innerHTML = html;
+        }
+
+        loadComponent('nav', './components/nav.html');
+        loadComponent('welcome', './components/welcome.html');
+        loadComponent('projects', './components/projects.html');
+        loadComponent('footer', './components/footer.html');
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/* Micro animations */
+.fade-up{opacity:0;transform:translateY(10px);transition:opacity .5s,var(--transition)}
+.fade-up.aos-animate{opacity:1;transform:none}
+.nav a{position:relative}
+.nav a::after{content:'';position:absolute;left:0;right:0;height:2px;background:var(--accent);bottom:-6px;transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.nav a:hover::after{transform:scaleX(1)}

@@ -1,3 +1,78 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Моё портфолио</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/themes.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+</head>
+<body data-theme="light">
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="#">Моё портфолио</a>
+      <nav class="nav" id="nav">
+        <!-- Nav injected by JS -->
+      </nav>
+      <div class="actions">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <!-- Hero injected by JS -->
+    </section>
+
+    <section id="about" class="about container" data-aos="fade-up">
+      <!-- About injected by JS -->
+    </section>
+
+    <section id="projects" class="projects container" data-aos="fade-up">
+      <h2>Projects</h2>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project cards injected by JS -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact container" data-aos="fade-up">
+      <h2>Contact</h2>
+      <form id="contact-form" novalidate>
+        <label>
+          Your name
+          <input type="text" id="name" required />
+        </label>
+        <label>
+          Your email
+          <input type="email" id="email" required />
+        </label>
+        <label>
+          Message
+          <textarea id="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner" id="footer">
+      <!-- Footer injected by JS -->
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/min/tiny-slider.js"></script>
+  <script src="content.js"></script>
+  <script src="scripts/theme-toggle.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/contact.js"></script>
+  <script> AOS.init({ once: true }); </script>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>

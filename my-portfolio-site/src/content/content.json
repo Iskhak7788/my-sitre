@@ -1,0 +1,18 @@
+{
+  "welcome": {
+    "title": "Welcome to My Portfolio",
+    "description": "Hello! I'm a passionate developer with a love for creating dynamic and responsive web applications. Explore my work and feel free to reach out!"
+  },
+  "contact": {
+    "email": "your-email@example.com",
+    "phone": "+1234567890",
+    "socials": {
+      "github": "https://github.com/yourusername",
+      "linkedin": "https://linkedin.com/in/yourusername",
+      "twitter": "https://twitter.com/yourusername"
+    }
+  },
+  "footer": {
+    "text": "© 2023 Your Name. All rights reserved."
+  }
+}

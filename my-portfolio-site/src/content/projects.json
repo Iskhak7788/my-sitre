@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Project One",
+      "image": "assets/images/project-one.png",
+      "link": "https://github.com/username/project-one",
+      "description": "A brief description of Project One."
+    },
+    {
+      "title": "Project Two",
+      "image": "assets/images/project-two.png",
+      "link": "https://github.com/username/project-two",
+      "description": "A brief description of Project Two."
+    },
+    {
+      "title": "Project Three",
+      "image": "assets/images/project-three.png",
+      "link": "https://github.com/username/project-three",
+      "description": "A brief description of Project Three."
+    },
+    {
+      "title": "Project Four",
+      "image": "assets/images/project-four.png",
+      "link": "https://github.com/username/project-four",
+      "description": "A brief description of Project Four."
+    }
+  ]
+}
