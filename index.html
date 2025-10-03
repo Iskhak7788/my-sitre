@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой первый сайт</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">My Site</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Parallax welcome/hero -->
+    <section id="home" class="parallax-hero">
+      <div class="layer" data-speed="0.2" style="background: linear-gradient(135deg,#0f1724 0%, #0b1220 100%);"></div>
+      <div class="layer" data-speed="0.5" style="background: radial-gradient(circle at 10% 20%, rgba(0,188,212,0.12), transparent 8%), radial-gradient(circle at 90% 80%, rgba(255,193,7,0.08), transparent 10%);"></div>
+      <div class="layer" data-speed="0.8" style="background: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 8px);"></div>
+
+      <div class="hero-content">
+        <h1>My name <small>(developer and founder)</small></h1>
+        <p class="name">Iskhak Akmataliev</p>
+        <p class="subtitle">A small layered welcome page demo — built from scratch.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#about">Learn more</a>
+          <button onclick="sayHello()" class="btn secondary">Say hello</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="content">
+      <h2>About this site</h2>
+      <p>This is a simple multi-layered welcome page using lightweight CSS + JavaScript. It shows how different visual layers can move at different speeds to create depth.</p>
+    </section>
+
+    <section id="contact" class="content">
+      <h2>Contact</h2>
+      <p>If you'd like to reach out: <strong>Iskhak Akmataliev</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Site — Built by Iskhak Akmataliev</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

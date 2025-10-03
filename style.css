@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #121212;
+  color: #f5f5f5;
+}
+
+nav {
+  background: rgba(15, 23, 36, 0.6);
+  backdrop-filter: blur(6px);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+nav .brand {
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #e6eef2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Parallax hero */
+.parallax-hero {
+  position: relative;
+  height: 80vh;
+  min-height: 560px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e6f7fb;
+}
+
+.parallax-hero .layer {
+  position: absolute;
+  inset: 0;
+  transform: translate3d(0,0,0);
+  will-change: transform;
+}
+
+.parallax-hero .hero-content {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 900px;
+}
+
+.parallax-hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 44px;
+  letter-spacing: -0.02em;
+}
+
+.parallax-hero h1 small {
+  display: block;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.parallax-hero .name {
+  font-size: 28px;
+  margin: 8px 0 14px 0;
+  color: #bfefff;
+}
+
+.parallax-hero .subtitle {
+  margin-bottom: 18px;
+  opacity: 0.9;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(90deg,#00bcd4,#0097a7);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.content {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #dbeef6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(10,10,12,0.6);
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .parallax-hero { height: 70vh; min-height: 480px; }
+  .parallax-hero h1 { font-size: 28px; }
+  .parallax-hero .name { font-size: 20px; }
+  nav ul { gap: 12px; }
+}
